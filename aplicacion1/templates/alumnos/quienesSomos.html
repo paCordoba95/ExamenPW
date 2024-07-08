@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quienes Somos</title>
+    <link rel="stylesheet" href="../../static/aplicacion1/css/QuienesSomos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg custom-navbar">
+            <div class="container-fluid ayuda">
+                <a class="navbar-brand" href="#"><img class="logo" src="../../static/aplicacion1/img/startupchileblanco185px.png" alt="Logo de la empresa"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">                   
+                    <ul class="navbar-nav">
+                        {% for Nav in nav_items %}
+                            <li class="nav-item">
+                                <a class="nav-link text" aria-current="page" href="{{Nav.enlace_nav}}">{{Nav.nombre_nav}}</a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <main class="container my-3">
+        <div data-aos="fade-up">
+            <h1 class="titulo">
+                Start-up Chile
+            </h1>
+        </div>
+        <p class="text-end">
+            Inovando el futuro de los Start-up 
+        </p>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6 md-6 sm-12 historia">
+                    <div class="historia__contenido" data-aos="fade-right">
+                        <h2>
+                            Nuestra Historia:
+                        </h2>
+                        <p>
+                            Nuestra empresa, Innovate Solutions, nació en 2021 de la mano de un grupo de amigos apasionados por la tecnología y la innovación. Tras años de trabajar en diversas industrias y observar las necesidades cambiantes del mercado, decidimos unir nuestras fuerzas y crear una empresa dedicada a ofrecer soluciones tecnológicas innovadoras. Empezamos en un pequeño garaje, con pocos recursos pero con una gran determinación y una visión clara. Gracias al trabajo duro y a la confianza de nuestros primeros clientes, hemos crecido hasta convertirnos en un referente en el sector, siempre manteniendo nuestro compromiso con la calidad y la excelencia.
+                        </p>
+                    </div>
+                    <div class="historia__contenido" data-aos="fade-right">
+                        <h2>
+                            Nuestra Visión
+                        </h2>
+                        <p>
+                            Ser la empresa líder en soluciones tecnológicas a nivel mundial, reconocida por nuestra capacidad de innovación, compromiso con la sostenibilidad y por mejorar la vida de las personas a través de nuestras soluciones.
+                        </p>
+                    </div>
+                    <div class="historia__contenido" data-aos="fade-right">
+                        <h2>
+                            Nuestra Misión
+                        </h2>
+                        <p>
+                            Desarrollar y ofrecer soluciones tecnológicas innovadoras que impulsen la eficiencia y productividad de las empresas, promoviendo un crecimiento sostenible y mejorando la calidad de vida de nuestros clientes y la comunidad. Nos comprometemos a mantenernos a la vanguardia de la tecnología, proporcionando productos y servicios de alta calidad y construyendo relaciones duraderas basadas en la confianza y la satisfacción del cliente.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6 md-6 sm-12" data-aos="fade-left">
+                    <img src="../../static/aplicacion1/img/imagen-01-benjamin.png" class="img-fluid mx-auto d-flex" alt="">
+                </div>
+            </div>
+        </div>
+    </main>
+    <section class="container">
+        <div class="row">
+            <div class="col-lg-6 md-6 sm-12 display-flex">
+                <div class="card" style="width: 18rem;" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="1200">
+                    <img src="../../static/aplicacion1/img/persona-01-benjamin.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Juana Gonzales</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1200">
+                    <img src="../../static/aplicacion1/img/persona-02-benjamin.avif" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Alvaro Perez</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 md-6 sm-12 display-flex">
+                <div class="card" style="width: 18rem;" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="1200">
+                    <img src="../../static/aplicacion1/img/persona-03-benjamin.avif" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Matias Orellana</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1200">
+                    <img src="../../static/aplicacion1/img/persona-04-benjamin.avif" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Dilan Quevedo</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer> 
+        <div class="row">
+            <div class="col-12 col-lg-6" data-aos="fade-left">
+                <img src="../../static/aplicacion1/img/logocorfo.png" alt="CorfoImagen">
+            </div>
+            <div class="col-12 col-lg-6 logos" data-aos="fade-down" data-aos-duration="1200">
+                <a href="#"><i class="bi bi-linkedin m-2"></i></a>
+                <a href="#"><i class="bi bi-instagram m-2"></i></a>
+                <a href="#"><i class="bi bi-facebook m-2"></i></a>
+                <a href="#"><i class="bi bi-whatsapp m-2"></i></a>
+                <a href="#"><i class="bi bi-twitter-x m-2"></i></a>
+                <a href="#"><i class="bi bi-reddit m-2"></i></a>
+                
+            </div>
+        </div>
+        <hr>
+        <div data-aos="zoom-in">
+            <h6 class="text-center">CONTACTANOS!</h6>
+        </div>
+        <hr>
+        <div>
+            <p class="text-center">
+                Start-up Chile - Derechos reservados
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

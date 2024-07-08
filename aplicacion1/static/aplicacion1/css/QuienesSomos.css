@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Nanum+Myeongjo&family=Playwrite+ES&display=swap');
+:root{
+    --fuentePrincipal: "Libre Franklin", sans-serif;
+}
+html{
+    box-sizing: border-box;
+    font-size: 65.5%;
+}
+*, *:before *:after{
+    box-sizing: inherit;
+}
+*{
+    font-family: var(--fuentePrincipal);
+}
+.custom-navbar{
+    background-color: rgb(100, 13, 107);
+}
+.ayuda{
+    padding: .6rem;
+}
+.ayuda a{
+    font-size: 1.4rem;
+}
+.custom-navbar .nav-link{
+    color: white;
+}
+
+h1{
+    text-align: center;
+}
+
+.titulo{
+    font-size: 3.3rem;
+}
+
+.historia{
+    display: grid;
+    grid-template-rows: auto;
+}
+.historia__contenido h2{
+    font-size: 2.8rem;
+}
+.historia__contenido p{
+    font-size: 1.3rem;
+}
+.display-flex{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+}
+.card-body p{
+    font-size: 1.3rem;
+}
+.card-body h5{
+    font-size: 2rem;
+}
+
+.logos i{
+    font-size: 3rem;
+    color: rgb(248, 208, 130);
+}
+
+footer{
+    background-color: rgb(100, 13, 107);
+    padding: 40px;
+    margin-bottom: 0%;
+    color: white;
+    clear:left
+}
+footer p{
+    font-size: 1.4rem;
+}
+footer h6{
+    padding: 1.3rem;
+    font-size: 1.4rem;
+}
+.servicio-1__img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.servicio-1{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    align-items: center;
+}
+.gap{
+    gap: 2rem;
+}
+.servicio-2{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem !important;
+}
+.servicio-1__titulo{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 3.5rem;
+}
+.servicio-1__texto{
+    font-size: 1.4rem;
+}
+.servicio-1__texto__lista{
+    font-size: 1.4rem;
+    margin: 1.5rem;
+}

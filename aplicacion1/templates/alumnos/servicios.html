@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios</title>
+    <link rel="stylesheet" href="../../static/aplicacion1/css/QuienesSomos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg custom-navbar">
+            <div class="container-fluid ayuda">
+                <a class="navbar-brand" href="#"><img class="logo" src="../../static/aplicacion1/img/startupchileblanco185px.png" alt="Logo de la empresa"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">                   
+                    <ul class="navbar-nav">
+                        {% for Nav in nav_items %}
+                            <li class="nav-item">
+                                <a class="nav-link text" aria-current="page" href="{{Nav.enlace_nav}}">{{Nav.nombre_nav}}</a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="servicio-1__titulo" data-aos="zoom-in">
+            Nuestros Servicios
+        </h1>
+        <div class="container gap">
+            <div class="row">
+                <div class="col-lg-6 md-6 sm-12 servicio-1__img my-3" data-aos="fade-right">
+                    <img src="../../static/aplicacion1/img/imagen-sof-benjamin.jpg" width="100%" alt="">
+                </div>
+                <div class="col-lg-6 md-6 sm-12">
+                    <div class="container my-3 servicio-1">
+                        <h2 data-aos="fade-left" class="text-center servicio-1__titulo">
+                            Tecnologia y Software 
+                        </h2>
+                        <p data-aos="fade-right" class="servicio-1__texto">
+                            Contamos con un equipo de profesionales altamente calificados, comprometidos a brindar todos nuestros servicios con la máxima calidad, garantizando así una experiencia excepcional para nuestros clientes. <br>
+                            Ofrecemos una extensa gama de tecnologías, tales como:
+                        </p>
+                        <ul data-aos="fade-left" class="servicio-1__texto__lista">
+                            <li>Desarrollo de aplicaciones móviles.</li>
+                            <li>Soluciones de software a medida.</li>
+                            <li>Servicios de ciberseguridad.</li>
+                            <li>Desarrollo de inteligencia artificial y machine learning.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container gap">
+            <div class="row">
+                <div class="col-lg-6 md-6 sm-12">
+                    <div class="container servicio-2">
+                        <h2 class="text-center servicio-1__titulo" data-aos="zoom-in">
+                            E-comerce y retail 
+                        </h2>
+                        <p class="servicio-1__texto" data-aos="fade-left">
+                            Ofrecemos una extensa gama de tecnologías en E-comerce y retail, tales como:
+                        </p>
+                        <ul class="servicio-1__texto__lista" data-aos="fade-right">
+                            <li>Marketplaces en línea.</li>
+                            <li>Servicios de logística y entrega a domicilio.</li>
+                            <li>Soluciones de gestión de inventarios.</li>
+                            <li>Tecnología de realidad aumentada para compras.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6 md-6 sm-12 servicio-1__img my-3" data-aos="fade-left">
+                    <img src="../../static/aplicacion1/img/retail-benjamin.png" width="100%" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="container gap">
+            <div class="row">
+                <div class="col-lg-6 md-6 sm-12 servicio-1__img my-3" data-aos="fade-right">
+                    <img src="../../static/aplicacion1/img/mark-benjamin.jpg" width="100%" alt="">
+                </div>
+                <div class="col-lg-6 md-6 sm-12">
+                    <div class="container my-3 servicio-1">
+                        <h2 class="text-center servicio-1__titulo" data-aos="fade-left">
+                            Marketing Digital
+                        </h2>
+                        <p class="servicio-1__texto" data-aos="fade-right">
+                            Contamos con un equipo de profesionales altamente calificados, comprometidos a brindar todos nuestros servicios con la máxima calidad, garantizando así una experiencia excepcional para nuestros clientes. <br>
+                            Ofrecemos una extensa gama de tecnologías, tales como:
+                        </p>
+                        <ul class="servicio-1__texto__lista" data-aos="fade-left">
+                            <li>Marketing digital y SEO.</li>
+                            <li>Gestión de redes sociales.</li>
+                            <li>Creación de contenido y diseño gráfico.</li>
+                            <li>Análisis de datos y métricas de marketing.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+
+
+
+
+    <footer> 
+        <div class="row">
+            <div class="col-12 col-lg-6" data-aos="fade-left">
+                <img src="../../static/aplicacion1/img/logocorfo.png" alt="CorfoImagen">
+            </div>
+            <div class="col-12 col-lg-6 logos" data-aos="fade-down" data-aos-duration="1200">
+                <a href="#"><i class="bi bi-linkedin m-2"></i></a>
+                <a href="#"><i class="bi bi-instagram m-2"></i></a>
+                <a href="#"><i class="bi bi-facebook m-2"></i></a>
+                <a href="#"><i class="bi bi-whatsapp m-2"></i></a>
+                <a href="#"><i class="bi bi-twitter-x m-2"></i></a>
+                <a href="#"><i class="bi bi-reddit m-2"></i></a>
+                
+            </div>
+        </div>
+        <hr>
+        <div data-aos="zoom-in">
+            <h6 class="text-center">CONTACTANOS!</h6>
+        </div>
+        <hr>
+        <div>
+            <p class="text-center">
+                Start-up Chile - Derechos reservados
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
